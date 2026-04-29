@@ -11,28 +11,14 @@
 
 <div id="header"></div>
 
-<script>
-fetch("header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
-</script>
-
 <main>
 <h2>Welcome</h2>
 <p>Welcome to UICF Chess Vidhyapeeth. Promoting chess excellence and structured training.</p>
 </main>
 
-<script>
-fetch("footer.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  });
-</script>
+<div id="footer"></div>
 
-  <script>
+<script>
 function loadHTML(id, file) {
 fetch(file)
 .then(response => response.text())
@@ -45,6 +31,5 @@ loadHTML("header", "/header.html");
 loadHTML("footer", "/footer.html");
 </script>
 
-  
 </body>
 </html>
