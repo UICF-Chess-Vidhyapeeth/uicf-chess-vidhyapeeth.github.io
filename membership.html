@@ -28,9 +28,13 @@
 <p>Membership details will be updated soon.</p>
 </main>
 
-<footer>
-<p>&copy; 2026 UICF Chess Vidhyapeeth</p>
-</footer>
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 
 </body>
 </html>
